@@ -62,4 +62,11 @@ $("document").ready(function () {
     $("#section3").parent().append(tmpHtml);
   }
 
+  // add bootstrap classes
+  $(".container-fluid").addClass("text-center");
+  $("header").addClass("text-center");
+  $("#header").addClass("align-items-center");
+  $(".section-title").addClass("col-12 text-center");
+  $("row").addClass("justify-content-around");
+  $("img").addClass("img-fluid");
 });

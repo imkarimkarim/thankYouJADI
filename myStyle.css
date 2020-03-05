@@ -1,0 +1,13 @@
+#header{
+  background: url("./img/jadiFace.jpg");
+  background-color: black;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+.bigTitle{
+  padding: 0 150px 0 50px;
+  text-align: left;
+  color: rgb(0, 0, 0);
+}
