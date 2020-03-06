@@ -1,3 +1,40 @@
+body{
+  background: rgb(255, 255, 255);  
+  font-size: 1em;
+  transition: .5s ease all;
+}
+
+
+
+
+
+
+/* do this in jquery *//* do this in jquery *//* do this in jquery *//* do this in jquery */
+a:link{
+  color:  rgb(43, 43, 43);
+  transition: .2s ease all;
+}
+a:hover{
+  color: rgb(145, 61, 230);
+  text-decoration: none;
+  transition: .2s ease all;
+}
+a:visited{
+  color:  rgb(43, 43, 43);
+  transition: .2s ease all;
+}
+a:visited:hover{
+  color:  rgb(145, 61, 230);
+  transition: .2s ease all;
+}
+/* do this in jquery *//* do this in jquery *//* do this in jquery *//* do this in jquery */
+
+
+
+
+a{
+  font-weight: 500;
+}
 #header{
   background: url("./img/jadiFace.jpg");
   background-color: black;
@@ -10,4 +47,41 @@
   padding: 0 150px 0 50px;
   text-align: left;
   color: rgb(0, 0, 0);
+  transition: .5s ease all;
+}
+.section-title > h4{
+  font-size: 1.8em;
+  margin: 60px  60px 30px 60px;
+  padding: 17px;
+  color: black;
+  align-self: center;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color:  rgb(145, 61, 230);
+  transition: .2s ease all;
+  transition: .5s ease all;
+}
+.section-title > h4:hover{
+  color:rgb(145, 61, 230);
+  transition: .2s ease all;
+  cursor: default;
+  transition: .5s ease all;
+}
+.gallery-card{
+  margin: 15px 0;
+  border: 2px solid rgb(231, 231, 231);
+  border-radius: 5px;
+  transition: .2s ease all;
+}
+.gallery-card:hover{
+  border: 2px solid rgb(145, 61, 230);
+  transition: .2s ease all;
+}
+.gallery-card img{
+  border-radius: 5px;
+  width: 400px;
+  height: auto;
+}
+.gallery-card p{
+  padding-top: 15px;
 }
