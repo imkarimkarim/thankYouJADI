@@ -37,11 +37,13 @@ a{
 }
 #header{
   background: url("./img/jadiFace.jpg");
-  background-color: black;
   height: 100vh;
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
+}
+.bigTitle p{
+  width: 55%;
 }
 .bigTitle{
   padding: 0 150px 0 50px;
@@ -55,15 +57,11 @@ a{
   padding: 17px;
   color: black;
   align-self: center;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-color:  rgb(145, 61, 230);
-  transition: .2s ease all;
+  box-shadow: 0 0 20px rgba(145, 61, 230, 0.438);  
   transition: .5s ease all;
 }
 .section-title > h4:hover{
   color:rgb(145, 61, 230);
-  transition: .2s ease all;
   cursor: default;
   transition: .5s ease all;
 }
@@ -74,7 +72,7 @@ a{
   transition: .2s ease all;
 }
 .gallery-card:hover{
-  border: 2px solid rgb(145, 61, 230);
+  box-shadow: 0 0 20px rgba(145, 61, 230, 0.438);  
   transition: .2s ease all;
 }
 .gallery-card img{
@@ -84,4 +82,19 @@ a{
 }
 .gallery-card p{
   padding-top: 15px;
+}
+i{
+  font-size: 2em;
+  display: inline-block;
+}
+i h6{
+  padding: 8px;
+  font-family: "iransans";
+  font-size: .4em;
+}
+footer{
+  padding: 50px 0;
+}
+#links{
+  padding: 10px 0;
 }
