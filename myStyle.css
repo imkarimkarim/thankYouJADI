@@ -1,6 +1,7 @@
 body{
   background: rgb(255, 255, 255);  
   font-size: 1em;
+  color: #202020;
   transition: .5s ease all;
 }
 
@@ -41,6 +42,7 @@ a{
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
+  transition: .2s ease all;
 }
 .bigTitle p{
   width: 55%;
@@ -49,7 +51,7 @@ a{
   padding: 0 150px 0 50px;
   text-align: left;
   color: rgb(0, 0, 0);
-  transition: .5s ease all;
+  transition: .2s ease all;
 }
 .section-title > h4{
   font-size: 1.8em;
@@ -58,12 +60,12 @@ a{
   color: black;
   align-self: center;
   box-shadow: 0 0 20px rgba(145, 61, 230, 0.438);  
-  transition: .5s ease all;
+  transition: .2s ease all;
 }
 .section-title > h4:hover{
   color:rgb(145, 61, 230);
   cursor: default;
-  transition: .5s ease all;
+  transition: .2s ease all;
 }
 .gallery-card{
   margin: 15px 0;
@@ -97,4 +99,15 @@ footer{
 }
 #links{
   padding: 10px 0;
+}
+
+@media (max-width: 982px){
+  #header{
+    background-color: #202020;
+    background-blend-mode: soft-light;    
+  }
+  .bigTitle{
+    color: white;
+  }
+
 }
