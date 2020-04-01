@@ -62,7 +62,7 @@ $("document").ready(function () {
   for (let i = 1; i < book.length; i++) {
     tmpHtml = '<div class="col-lg-4 col-md-6 col-12">' + '<div class="gallery-card">' + '<a href="' + book[i].link
       + '" target="_blank">' + '<img src="img/' + book[i].img + '">'
-      + "<br>" + "<p>" + img[i].title + "</p>" + '</a>' + '</div>' + '</div>';
+      + "<br>" + "<p>" + book[i].title + "</p>" + '</a>' + '</div>' + '</div>';
     $("#section2").parent().append(tmpHtml);
   }
 
@@ -70,7 +70,7 @@ $("document").ready(function () {
   for (let i = 1; i < podcast.length; i++) {
     tmpHtml = '<div class="col-lg-4 col-md-6 col-12">' + '<div class="gallery-card">' + '<a href="' + podcast[i].link
       + '" target="_blank">' + '<img src="img/' + podcast[i].img + '">'
-      + "<br>" + "<p>" + img[i].title + "</p>" + '</a>' + '</div>' + '</div>';
+      + "<br>" + "<p>" + podcast[i].title + "</p>" + '</a>' + '</div>' + '</div>';
     $("#section3").parent().append(tmpHtml);
   }
 
