@@ -18,6 +18,7 @@ $("document").ready(function () {
   let book = []
   let podcast = []
 
+  //links
   img[1] = new Card("Linux toturials for happy people", "https://www.youtube.com/playlist?list=PL-tKrPVkKKE2AniHDmp6zK9KGD1sjf0bd", "linux.jpg")
   img[2] = new Card("Jaditv", "https://www.youtube.com/playlist?list=PL-tKrPVkKKE3hrSEWmC_zWayV-hWKQPKR", "tv.jpg")
   img[3] = new Card("Serial Number SMS Confirmation Project", "https://www.youtube.com/playlist?list=PL-tKrPVkKKE1vAT_rgjnvL_RgFUI9oJ9a", "sms.jpg")

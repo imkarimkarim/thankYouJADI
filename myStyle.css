@@ -71,15 +71,13 @@ a{
   align-self: center;
   box-shadow: 0 0 20px rgba(145, 61, 230, 0.438);  
   transition: .2s ease all;
-}
-.section-title > h4:hover{
   color:rgb(145, 61, 230);
   cursor: default;
   transition: .2s ease all;
 }
 .gallery-card{
   margin: 15px 0;
-  border: 2px solid rgb(231, 231, 231);
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 5px;
   transition: .2s ease all;
 }
