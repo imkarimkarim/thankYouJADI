@@ -74,6 +74,7 @@ $("document").ready(function () {
     $("#section3").parent().append(tmpHtml);
   }
 
+  let theme = "light";
   // add bootstrap classes
   $(".container-fluid").addClass("text-center");
   $("header").addClass("text-center");
@@ -81,4 +82,15 @@ $("document").ready(function () {
   $(".section-title").addClass("col-12 text-center");
   $("row").addClass("justify-content-around");
   $("img").addClass("img-fluid");
+  $("#changeTheme").click(() =>{
+    if(theme == "light"){
+      $('link[href="myStyle.css"]').attr("href", "myDarkStyle.css");
+      $("#changeTheme").html('<i class="fas fa-sun"></i>');
+      theme = "dark";
+    } else if(theme == "dark"){
+      $('link[href="myDarkStyle.css"]').attr("href", "myStyle.css");
+      $("#changeTheme").html('<i class="fas fa-moon"></i>');
+      theme = "light";
+    }
+  })
 });
