@@ -48,7 +48,7 @@ $("document").ready(function () {
   // adding content
   let tmpHtml = ""
   // $("header").append('<img src="img/jadiFace.jpg" alt="jadi">');
-  $("header").append('<div class="bigTitle"><h1>ThankYou JADI</h1><p>for all this awesome contents that you spend time to make for us... you\'re the best</p></div>');
+  $("header").append('<div style="position: relative" class="bigTitle"><div class="heart"></div><h1>ThankYou JADI</h1><p>for all this awesome contents that you spend time to make for us... you\'re the best</p></div>');
 
   // $("#section1 .section-title").append("<h4>Video Toturials<hr></h4>");
   for (let i = 1; i < img.length; i++) {
