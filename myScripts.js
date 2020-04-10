@@ -85,24 +85,28 @@ $("document").ready(function () {
   $("#changeTheme").click(() =>{
     if(theme == "light"){
       $(":root").css("--title", "#08e600");
+      $(":root").css("--mobileTitle", "#08e600");
       $(":root").css("--link", "rgb(119, 119, 119)");
       $(":root").css("--hoverLink", "#08e600");
       $(":root").css("--shadow", "#08e600");
       $(":root").css("--border", "#000");
       $(":root").css("--almostBlack", "#202020");
       $(":root").css("--icon", "#08e600");
+      $(":root").css("--mobileIcon", "#08e600");
       $(":root").css("--jadiImg", 'url("./img/jadiDarkFace.jpg")');
       $(":root").css("--fontFamily", 'anotherTypeWriter, ballo, muli, Arial, Helvetica, sans-serif');
       $("#changeTheme").html('<i class="fas fa-sun"></i>');
       theme = "dark";
     } else if(theme == "dark"){
       $(":root").css("--title", "rgb(0, 0, 0)");
+      $(":root").css("--mobileTitle", "#fff");
       $(":root").css("--link", "rgb(43, 43, 43)");
       $(":root").css("--hoverLink", "rgb(145, 61, 230)");
       $(":root").css("--shadow", "rgba(145, 61, 230, 0.438)");
       $(":root").css("--border", "rgb(255, 255, 255)");
       $(":root").css("--almostBlack", "#202020");
       $(":root").css("--icon", "#202020");
+      $(":root").css("--mobileIcon", "#fff");
       $(":root").css("--jadiImg", 'url("./img/jadiFace.jpg")');
       $(":root").css("--fontFamily", 'ballo, muli, Arial, Helvetica, sans-serif');
       $("#changeTheme").html('<i class="fas fa-moon"></i>');

@@ -12,8 +12,11 @@
 }
 :root{
   --title: rgb(0, 0, 0);
+  --mobileTitle: #fff;
   --link: rgb(43, 43, 43);
   --hoverLink: rgb(145, 61, 230);
+  --icon: #202020;
+  --mobileIcon: #fff;
   --shadow: rgba(145, 61, 230, 0.438);
   --border: rgb(255, 255, 255);
   --almostBlack: #202020;
@@ -137,10 +140,10 @@ footer{
     background-blend-mode: soft-light;    
   }
   .bigTitle{
-    color: var(--border);
+    color: var(--mobileTitle);
   }
   #changeTheme{
-    color: var(--border);
+    color: var(--mobileIcon);
   }
 
 }
