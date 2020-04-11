@@ -1,50 +1,57 @@
 @font-face{
-  font-family: "ballo";
+  font-family: ballo;
   src: url("./fonts/Baloo2-Medium.ttf");
 }
 @font-face{
-  font-family: "muli";
+  font-family: muli;
   src: url("./fonts/Muli-Black.ttf");
+}
+@font-face{
+  font-family: anotherTypeWriter;
+  src: url("./fonts/atwriter.ttf");
+}
+:root{
+  --title: rgb(0, 0, 0);
+  --mobileTitle: #fff;
+  --link: rgb(43, 43, 43);
+  --hoverLink: rgb(145, 61, 230);
+  --icon: #202020;
+  --mobileIcon: #fff;
+  --shadow: rgba(145, 61, 230, 0.438);
+  --border: rgb(255, 255, 255);
+  --almostBlack: #202020;
+  --jadiImg: url("./img/jadiFace.jpg");
+  --fontFamily: ballo, muli, Arial, Helvetica, sans-serif;
+  --borderRadius: 5px;
 }
 ::selection{
   color: white;
-  background-color: #202020;
+  background-color: rgb(114, 114, 114);
 }
 body{
-  font-family: "ballo", "muli", Arial, Helvetica, sans-serif;
-  background: rgb(255, 255, 255);  
+  font-family: var(--fontFamily);
+  background: var(--border);
   font-size: 1em;
-  color: #202020;
+  color: var(--link);
   transition: .5s ease all;
 }
-
-
-
-
-
-
-/* do this in jquery *//* do this in jquery *//* do this in jquery *//* do this in jquery */
 a:link{
-  color:  rgb(43, 43, 43);
+  color:  var(--link);
   transition: .2s ease all;
 }
 a:hover{
-  color: rgb(145, 61, 230);
+  color: var(--hoverLink);
   text-decoration: none;
   transition: .2s ease all;
 }
 a:visited{
-  color:  rgb(43, 43, 43);
+  color:   var(--link);
   transition: .2s ease all;
 }
 a:visited:hover{
-  color:  rgb(145, 61, 230);
+  color: var(--hoverLink);
   transition: .2s ease all;
 }
-/* do this in jquery *//* do this in jquery *//* do this in jquery *//* do this in jquery */
-
-
-
 .unerLine{
   text-decoration: underline;
 }
@@ -52,7 +59,7 @@ a{
   font-weight: 500;
 }
 #header{
-  background: url("./img/jadiFace.jpg");
+  background: var(--jadiImg);
   height: 100vh;
   background-repeat: no-repeat;
   background-position: right;
@@ -65,39 +72,39 @@ a{
 .bigTitle{
   padding: 0 150px 0 50px;
   text-align: left;
-  color: rgb(0, 0, 0);
+  color: var(--title);
   transition: .2s ease all;
 }
 .section-title > h4{
   font-size: 1.8em;
   margin: 60px  60px 30px 60px;
   padding: 17px;
-  color: black;
+  color: var(--title);
   align-self: center;
-  box-shadow: 0 0 20px rgba(145, 61, 230, 0.438);  
+  box-shadow: 0 0 20px var(--shadow);
   transition: .2s ease all;
-  color:rgb(145, 61, 230);
+  color: var(--hoverLink);
   cursor: default;
   transition: .2s ease all;
 }
 .gallery-card{
   margin: 15px 0;
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 5px;
+  border: 2px solid var(--border);
+  border-radius: var(--borderRadius);
   transition: .2s ease all;
 }
 .gallery-card:hover{
-  border: 2px solid rgba(145, 61, 230, 0.438);  
-  box-shadow: 0 0 20px rgba(145, 61, 230, 0.438);  
+  border: 2px solid var(--shadow);
+  box-shadow: 0 0 20px var(--shadow);
   transition: .2s ease all;
 }
 .gallery-card:active{
-  border: 2px solid rgba(145, 61, 230, 0.438);  
-  box-shadow: 0 0 20px rgba(145, 61, 230, 0.438);  
+  border: 2px solid var(--shadow);
+  box-shadow: 0 0 20px var(--shadow);
   transition: .2s ease all;
 }
 .gallery-card img{
-  border-radius: 5px;
+  border-radius: var(--borderRadius);
   width: 400px;
   height: auto;
 }
@@ -124,20 +131,20 @@ footer{
   top: 0;
   left: 0;
   margin: 10px;
-  color: #202020;
+  color: var(--icon);
   border-radius: 10px;
   padding: 10px;
 }
 @media (max-width: 982px){
   #header{
-    background-color: #202020;
+    background-color: var(--almostBlack);
     background-blend-mode: soft-light;    
   }
   .bigTitle{
-    color: white;
+    color: var(--mobileTitle);
   }
   #changeTheme{
-    color: #ffffff;
+    color: var(--mobileIcon);
   }
 
 }
