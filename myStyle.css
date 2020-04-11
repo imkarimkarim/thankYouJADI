@@ -166,6 +166,7 @@ footer{
   left: 45%;
   width: 50px;
   opacity: 0.6;
+  border-bottom-left-radius: 5px;
 }
 .heart:before,
 .heart:after {
