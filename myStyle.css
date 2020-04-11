@@ -23,6 +23,8 @@
   --jadiImg: url("./img/jadiFace.jpg");
   --fontFamily: ballo, muli, Arial, Helvetica, sans-serif;
   --borderRadius: 5px;
+  --heartcolor: red;
+  --hearttop: 0px;
 }
 ::selection{
   color: white;
@@ -150,60 +152,104 @@ footer{
 }
 
 /* beating heart from https://www.freecodecamp.org/news/how-to-create-a-beating-heart-with-pure-css-for-your-valentine-2aeb05e2d36e */
+.heart-box,
+.bigTitle h1 {
+  float: left;
+}
+.bigTitle p {
+  clear: both;
+}
+.heart-box {
+  width: 55px;
+  height: 35px;
+}
 .heart {
   animation: heartbeat 1s infinite;
-  background-color: red;
+  background: var(--heartcolor);
   display: inline-block;
   height: 50px;
   margin: 0 10px;
-  top: 0;
+  top: var(--hearttop);
   transform: rotate(-45deg);
   position: absolute; 
   left: 45%;
   width: 50px;
   opacity: 0.6;
+  border-bottom-left-radius: 5px;
 }
-
 .heart:before,
 .heart:after {
   content: "";
-  background-color: red;
+  background: var(--heartcolor);
   border-radius: 50%;
   height: 50px;
   position: absolute;
   width: 50px;
 }
-
 .heart:before {
   top: -25px;
   left: 0;
 }
-
 .heart:after {
   left: 25px;
   top: 0;
 }
 @keyframes heartbeat {
-  /* 0% {
-    transform: scale( 1 ) 
-    rotate(-45deg);    
-  } */
   20% {
     transform: scale( 1.25 ) 
       translateX(5%) 
       translateY(5%)
       rotate(-45deg);
   } 
-  /* 40% {
-    transform: scale( 1.5 ) 
-      translateX(9%) 
-      translateY(10%) 
-      rotate(-45deg);
+}
+/* Make it responsive */
+@media only screen and (max-width: 600px) {
+  .bigTitle p {
+    width: 90%;
   }
-  60% {
-    transform: scale( 1.75 ) 
-      translateX(13%) 
-      translateY(15%) 
-      rotate(-45deg);
-  } */
+  .heart-box {
+    height: 30px;
+    float: right;
+    clear: both;
+    width: 5px;
+  }
+  .heart {
+    top: -30px;
+    width: 40px;
+    height: 40px;
+  }
+  .heart:before,
+  .heart:after {
+  height: 40px;
+  width: 40px;
+  }
+  .heart:before {
+    top: -20px;
+  }
+
+  .heart:after {
+    left: 20px;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .bigTitle p {
+    width: 100%;
+  }
+  .heart {
+    top: -30px;
+    width: 30px;
+    height: 30px;
+  }
+  .heart:before,
+  .heart:after {
+  height: 30px;
+  width: 30px;
+  }
+  .heart:before {
+    top: -15px;
+  }
+
+  .heart:after {
+    left: 15px;
+  }
 }

@@ -48,7 +48,7 @@ $("document").ready(function () {
   // adding content
   let tmpHtml = ""
   // $("header").append('<img src="img/jadiFace.jpg" alt="jadi">');
-  $("header").append('<div style="position: relative" class="bigTitle"><div class="heart"></div><h1>ThankYou JADI</h1><p>for all this awesome contents that you spend time to make for us... you\'re the best</p></div>');
+  $("header").append('<div class="bigTitle"><h1>ThankYou JADI</h1><div class="heart-box" style="position: relative"><div class="heart"></div></div> <p>for all this awesome contents that you spend time to make for us... you\'re the best</p></div>');
 
   // $("#section1 .section-title").append("<h4>Video Toturials<hr></h4>");
   for (let i = 1; i < img.length; i++) {
@@ -97,6 +97,8 @@ $("document").ready(function () {
       $(":root").css("--fontFamily", 'anotherTypeWriter, ballo, muli, Arial, Helvetica, sans-serif');
       $("img").css("-webkit-filter", "grayscale(100%)");
       $(":root").css("--borderRadius", "0");
+      $(":root").css("--heartcolor", "#425539");
+      $(":root").css("--hearttop", "-10px");
       $("#changeTheme").html('<i class="fas fa-sun"></i>');
       theme = "dark";
     } else if(theme == "dark"){
@@ -113,6 +115,8 @@ $("document").ready(function () {
       $(":root").css("--fontFamily", 'ballo, muli, Arial, Helvetica, sans-serif');
       $("img").css("-webkit-filter", "grayscale(0%)");
       $(":root").css("--borderRadius", "5px");
+      $(":root").css("--heartcolor", "red");
+      $(":root").css("--hearttop", "0px");
       $("#changeTheme").html('<i class="fas fa-moon"></i>');
       theme = "light";
     }
