@@ -22,16 +22,17 @@
   --almostBlack: #202020;
   --jadiImg: url("./img/jadiFace.jpg");
   --fontFamily: ballo, muli, Arial, Helvetica, sans-serif;
+  --borderRadius: 5px;
 }
 ::selection{
-  color: var(--border);
-  background-color: var(--almostBlack);
+  color: white;
+  background-color: rgb(114, 114, 114);
 }
 body{
   font-family: var(--fontFamily);
   background: var(--border);
   font-size: 1em;
-  color: var(--almostBlack);
+  color: var(--link);
   transition: .5s ease all;
 }
 a:link{
@@ -89,7 +90,7 @@ a{
 .gallery-card{
   margin: 15px 0;
   border: 2px solid var(--border);
-  border-radius: 5px;
+  border-radius: var(--borderRadius);
   transition: .2s ease all;
 }
 .gallery-card:hover{
@@ -103,7 +104,7 @@ a{
   transition: .2s ease all;
 }
 .gallery-card img{
-  border-radius: 5px;
+  border-radius: var(--borderRadius);
   width: 400px;
   height: auto;
 }

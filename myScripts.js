@@ -95,6 +95,8 @@ $("document").ready(function () {
       $(":root").css("--mobileIcon", "#08e600");
       $(":root").css("--jadiImg", 'url("./img/jadiDarkFace.jpg")');
       $(":root").css("--fontFamily", 'anotherTypeWriter, ballo, muli, Arial, Helvetica, sans-serif');
+      $("img").css("-webkit-filter", "grayscale(100%)");
+      $(":root").css("--borderRadius", "0");
       $("#changeTheme").html('<i class="fas fa-sun"></i>');
       theme = "dark";
     } else if(theme == "dark"){
@@ -109,6 +111,8 @@ $("document").ready(function () {
       $(":root").css("--mobileIcon", "#fff");
       $(":root").css("--jadiImg", 'url("./img/jadiFace.jpg")');
       $(":root").css("--fontFamily", 'ballo, muli, Arial, Helvetica, sans-serif');
+      $("img").css("-webkit-filter", "grayscale(0%)");
+      $(":root").css("--borderRadius", "5px");
       $("#changeTheme").html('<i class="fas fa-moon"></i>');
       theme = "light";
     }
