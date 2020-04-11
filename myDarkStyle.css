@@ -143,3 +143,106 @@ footer{
   } */
 
 }
+
+/* beating heart from https://www.freecodecamp.org/news/how-to-create-a-beating-heart-with-pure-css-for-your-valentine-2aeb05e2d36e */
+.heart-box,
+.bigTitle h1 {
+  float: left;
+}
+.bigTitle p {
+  clear: both;
+}
+.heart-box {
+  width: 50px;
+  height: 35px;
+}
+.heart {
+  animation: heartbeat 1s infinite;
+  background-color: #425539;
+  display: inline-block;
+  height: 50px;
+  margin: 0 10px;
+  top: -10px;
+  transform: rotate(-45deg);
+  position: absolute;
+  left: 45%;
+  width: 50px;
+  opacity: 0.6; 
+}
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: #425539;
+  border-radius: 50%;
+  height: 50px;
+  position: absolute;
+  width: 50px;
+  z-index: -1;
+}
+.heart:before {
+  top: -25px;
+  left: 0;
+}
+.heart:after {
+  left: 25px;
+  top: 0;
+}
+@keyframes heartbeat {
+  20% {
+    transform: scale( 1.25 ) 
+      translateX(5%) 
+      translateY(5%)
+      rotate(-45deg);
+  } 
+}
+/* Make it responsive */
+@media only screen and (max-width: 600px) {
+  .bigTitle p {
+    width: 90%;
+  }
+  .heart-box {
+    height: 30px;
+    float: right;
+    clear: both;
+    width: 5px;
+  }
+  .heart {
+    top: -30px;
+    width: 40px;
+    height: 40px;
+  }
+  .heart:before,
+  .heart:after {
+  height: 40px;
+  width: 40px;
+  }
+  .heart:before {
+    top: -20px;
+  }
+
+  .heart:after {
+    left: 20px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .bigTitle p {
+    width: 100%;
+  }
+  .heart {
+    top: -30px;
+    width: 30px;
+    height: 30px;
+  }
+  .heart:before,
+  .heart:after {
+  height: 30px;
+  width: 30px;
+  }
+  .heart:before {
+    top: -15px;
+  }
+
+  .heart:after {
+    left: 15px;
+  }
+}
