@@ -23,6 +23,8 @@
   --jadiImg: url("./img/jadiFace.jpg");
   --fontFamily: ballo, muli, Arial, Helvetica, sans-serif;
   --borderRadius: 5px;
+  --heartcolor: red;
+  --hearttop: 0px;
 }
 ::selection{
   color: white;
@@ -163,11 +165,11 @@ footer{
 }
 .heart {
   animation: heartbeat 1s infinite;
-  background-color: red;
+  background: var(--heartcolor);
   display: inline-block;
   height: 50px;
   margin: 0 10px;
-  top: 0;
+  top: var(--hearttop);
   transform: rotate(-45deg);
   position: absolute; 
   left: 45%;
@@ -178,7 +180,7 @@ footer{
 .heart:before,
 .heart:after {
   content: "";
-  background-color: red;
+  background: var(--heartcolor);
   border-radius: 50%;
   height: 50px;
   position: absolute;
@@ -229,7 +231,7 @@ footer{
     left: 20px;
   }
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 470px) {
   .bigTitle p {
     width: 100%;
   }

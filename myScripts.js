@@ -97,6 +97,8 @@ $("document").ready(function () {
       $(":root").css("--fontFamily", 'anotherTypeWriter, ballo, muli, Arial, Helvetica, sans-serif');
       $("img").css("-webkit-filter", "grayscale(100%)");
       $(":root").css("--borderRadius", "0");
+      $(":root").css("--heartcolor", "#425539");
+      $(":root").css("--hearttop", "-10px");
       $("#changeTheme").html('<i class="fas fa-sun"></i>');
       theme = "dark";
     } else if(theme == "dark"){
@@ -113,6 +115,8 @@ $("document").ready(function () {
       $(":root").css("--fontFamily", 'ballo, muli, Arial, Helvetica, sans-serif');
       $("img").css("-webkit-filter", "grayscale(0%)");
       $(":root").css("--borderRadius", "5px");
+      $(":root").css("--heartcolor", "red");
+      $(":root").css("--hearttop", "0px");
       $("#changeTheme").html('<i class="fas fa-moon"></i>');
       theme = "light";
     }
