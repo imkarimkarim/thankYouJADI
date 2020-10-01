@@ -38,7 +38,7 @@ $("document").ready(function () {
   book[1] = new Card("Just for fun", "http://linuxstory.ir/", "books.jpg")
   book[2] = new Card("Linux and life", "http://linuxbook.ir/", "books.jpg")
   book[3] = new Card("The lost bicycle guide for life", "http://bikezen.ir/", "books.jpg")
-  book[4] = new Card("Snow Crash(source)", "https://github.com/jadijadi/snowcrash", "books.jpg")
+  book[4] = new Card("Snow Crash", "https://jadijadi.github.io/snowcrash", "books.jpg")
   podcast[1] = new Card("Radio geek podcast", "https://jadi.net/tag/podcast/", "podcast.jpg")
 
 
