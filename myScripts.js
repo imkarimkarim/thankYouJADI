@@ -1,7 +1,7 @@
 // im a new to jquery so i try to do all the thing i can in jquery to fill more relax with it.
-$("document").ready(function () {
+$("document").ready(function() {
 
-  const shortText = (str) =>{
+  const shortText = (str) => {
     let tmp = str.slice(0, 25);
     return tmp + "...";
   }
@@ -41,10 +41,9 @@ $("document").ready(function () {
   book[4] = new Card("Snow Crash", "https://jadijadi.github.io/snowcrash", "books.jpg")
   podcast[1] = new Card("Radio geek podcast", "https://jadi.net/tag/podcast/", "podcast.jpg")
 
-
   //if title is to long so short it :)
-  for(let i = 1; i < img.length; i++){
-    if(img[i].title.length > 26){
+  for (let i = 1; i < img.length; i++) {
+    if (img[i].title.length > 26) {
       img[i].title = shortText(img[i].title)
     }
   }
@@ -56,25 +55,19 @@ $("document").ready(function () {
 
   // $("#section1 .section-title").append("<h4>Video Toturials<hr></h4>");
   for (let i = 1; i < img.length; i++) {
-    tmpHtml = '<div class="col-lg-4 col-md-6 col-12">' + '<div class="gallery-card">' + '<a href="' + img[i].link
-      + '" target="_blank">' + '<img src="img/' + img[i].img + '">'
-      + "<br>" + "<p>" + img[i].title + "</p>" + '</a>' + '</div>' + '</div>';
+    tmpHtml = '<div class="col-lg-4 col-md-6 col-12">' + '<div class="gallery-card">' + '<a href="' + img[i].link + '" target="_blank">' + '<img src="img/' + img[i].img + '">' + "<br>" + "<p>" + img[i].title + "</p>" + '</a>' + '</div>' + '</div>';
     $("#section1").parent().append(tmpHtml);
   }
 
   // $("#section2 .section-title").append("<h4>Books<hr></h4>");
   for (let i = 1; i < book.length; i++) {
-    tmpHtml = '<div class="col-lg-4 col-md-6 col-12">' + '<div class="gallery-card">' + '<a href="' + book[i].link
-      + '" target="_blank">' + '<img src="img/' + book[i].img + '">'
-      + "<br>" + "<p>" + book[i].title + "</p>" + '</a>' + '</div>' + '</div>';
+    tmpHtml = '<div class="col-lg-4 col-md-6 col-12">' + '<div class="gallery-card">' + '<a href="' + book[i].link + '" target="_blank">' + '<img src="img/' + book[i].img + '">' + "<br>" + "<p>" + book[i].title + "</p>" + '</a>' + '</div>' + '</div>';
     $("#section2").parent().append(tmpHtml);
   }
 
   // $("#section3 .section-title").append("<h4>Podcast<hr></h4>");
   for (let i = 1; i < podcast.length; i++) {
-    tmpHtml = '<div class="col-lg-4 col-md-6 col-12">' + '<div class="gallery-card">' + '<a href="' + podcast[i].link
-      + '" target="_blank">' + '<img src="img/' + podcast[i].img + '">'
-      + "<br>" + "<p>" + podcast[i].title + "</p>" + '</a>' + '</div>' + '</div>';
+    tmpHtml = '<div class="col-lg-4 col-md-6 col-12">' + '<div class="gallery-card">' + '<a href="' + podcast[i].link + '" target="_blank">' + '<img src="img/' + podcast[i].img + '">' + "<br>" + "<p>" + podcast[i].title + "</p>" + '</a>' + '</div>' + '</div>';
     $("#section3").parent().append(tmpHtml);
   }
 
@@ -86,8 +79,8 @@ $("document").ready(function () {
   $(".section-title").addClass("col-12 text-center");
   $("row").addClass("justify-content-around");
   $("img").addClass("img-fluid");
-  $("#changeTheme").click(() =>{
-    if(theme == "light"){
+  $("#changeTheme").click(() => {
+    if (theme == "light") {
       $(":root").css("--title", "#08e600");
       $(":root").css("--mobileTitle", "#08e600");
       $(":root").css("--link", "rgb(119, 119, 119)");
@@ -105,7 +98,7 @@ $("document").ready(function () {
       $(":root").css("--hearttop", "-10px");
       $("#changeTheme").html('<i class="fas fa-sun"></i>');
       theme = "dark";
-    } else if(theme == "dark"){
+    } else if (theme == "dark") {
       $(":root").css("--title", "rgb(0, 0, 0)");
       $(":root").css("--mobileTitle", "#fff");
       $(":root").css("--link", "rgb(43, 43, 43)");

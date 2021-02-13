@@ -1,16 +1,19 @@
-@font-face{
+@font-face {
   font-family: ballo;
   src: url("./fonts/Baloo2-Medium.ttf");
 }
-@font-face{
+
+@font-face {
   font-family: muli;
   src: url("./fonts/Muli-Black.ttf");
 }
-@font-face{
+
+@font-face {
   font-family: anotherTypeWriter;
   src: url("./fonts/atwriter.ttf");
 }
-:root{
+
+:root {
   --title: rgb(0, 0, 0);
   --mobileTitle: #fff;
   --link: rgb(43, 43, 43);
@@ -26,41 +29,50 @@
   --heartcolor: red;
   --hearttop: 0px;
 }
-::selection{
+
+::selection {
   color: white;
   background-color: rgb(114, 114, 114);
 }
-body{
+
+body {
   font-family: var(--fontFamily);
   background: var(--border);
   font-size: 1em;
   color: var(--link);
   transition: .5s ease all;
 }
-a:link{
-  color:  var(--link);
+
+a:link {
+  color: var(--link);
   transition: .2s ease all;
 }
-a:hover{
+
+a:hover {
   color: var(--hoverLink);
   text-decoration: none;
   transition: .2s ease all;
 }
-a:visited{
-  color:   var(--link);
+
+a:visited {
+  color: var(--link);
   transition: .2s ease all;
 }
-a:visited:hover{
+
+a:visited:hover {
   color: var(--hoverLink);
   transition: .2s ease all;
 }
-.unerLine{
+
+.unerLine {
   text-decoration: underline;
 }
-a{
+
+a {
   font-weight: 500;
 }
-#header{
+
+#header {
   background: var(--jadiImg);
   height: 100vh;
   background-repeat: no-repeat;
@@ -68,18 +80,21 @@ a{
   background-size: cover;
   transition: .2s ease all;
 }
-.bigTitle p{
+
+.bigTitle p {
   width: 55%;
 }
-.bigTitle{
+
+.bigTitle {
   padding: 0 150px 0 50px;
   text-align: left;
   color: var(--title);
   transition: .2s ease all;
 }
-.section-title > h4{
+
+.section-title>h4 {
   font-size: 1.8em;
-  margin: 60px  60px 30px 60px;
+  margin: 60px 60px 30px 60px;
   padding: 17px;
   color: var(--title);
   align-self: center;
@@ -89,46 +104,56 @@ a{
   cursor: default;
   transition: .2s ease all;
 }
-.gallery-card{
+
+.gallery-card {
   margin: 15px 0;
   border: 2px solid var(--border);
   border-radius: var(--borderRadius);
   transition: .2s ease all;
 }
-.gallery-card:hover{
+
+.gallery-card:hover {
   border: 2px solid var(--shadow);
   box-shadow: 0 0 20px var(--shadow);
   transition: .2s ease all;
 }
-.gallery-card:active{
+
+.gallery-card:active {
   border: 2px solid var(--shadow);
   box-shadow: 0 0 20px var(--shadow);
   transition: .2s ease all;
 }
-.gallery-card img{
+
+.gallery-card img {
   border-radius: var(--borderRadius);
   width: 400px;
   height: auto;
 }
-.gallery-card p{
+
+.gallery-card p {
   padding-top: 15px;
 }
-i{
+
+i {
   font-size: 2em;
   display: inline-block;
 }
-i h6{
+
+i h6 {
   padding: 8px;
   font-family: "iransans";
   font-size: .4em;
 }
-footer{
+
+footer {
   padding: 50px 0;
 }
-#links{
+
+#links {
   padding: 10px 0;
 }
-#changeTheme{
+
+#changeTheme {
   position: absolute;
   top: 0;
   left: 0;
@@ -137,18 +162,20 @@ footer{
   border-radius: 10px;
   padding: 10px;
 }
-@media (max-width: 982px){
-  #header{
+
+@media (max-width: 982px) {
+  #header {
     background-color: var(--almostBlack);
-    background-blend-mode: soft-light;    
-  }
-  .bigTitle{
-    color: var(--mobileTitle);
-  }
-  #changeTheme{
-    color: var(--mobileIcon);
+    background-blend-mode: soft-light;
   }
 
+  .bigTitle {
+    color: var(--mobileTitle);
+  }
+
+  #changeTheme {
+    color: var(--mobileIcon);
+  }
 }
 
 /* beating heart from https://www.freecodecamp.org/news/how-to-create-a-beating-heart-with-pure-css-for-your-valentine-2aeb05e2d36e */
@@ -156,13 +183,16 @@ footer{
 .bigTitle h1 {
   float: left;
 }
+
 .bigTitle p {
   clear: both;
 }
+
 .heart-box {
   width: 55px;
   height: 35px;
 }
+
 .heart {
   animation: heartbeat 1s infinite;
   background: var(--heartcolor);
@@ -171,12 +201,13 @@ footer{
   margin: 0 10px;
   top: var(--hearttop);
   transform: rotate(-45deg);
-  position: absolute; 
+  position: absolute;
   left: 45%;
   width: 50px;
   opacity: 0.6;
   border-bottom-left-radius: 5px;
 }
+
 .heart:before,
 .heart:after {
   content: "";
@@ -186,43 +217,48 @@ footer{
   position: absolute;
   width: 50px;
 }
+
 .heart:before {
   top: -25px;
   left: 0;
 }
+
 .heart:after {
   left: 25px;
   top: 0;
 }
+
 @keyframes heartbeat {
   20% {
-    transform: scale( 1.25 ) 
-      translateX(5%) 
-      translateY(5%)
-      rotate(-45deg);
-  } 
+    transform: scale(1.25) translateX(5%) translateY(5%) rotate(-45deg);
+  }
 }
+
 /* Make it responsive */
 @media only screen and (max-width: 600px) {
   .bigTitle p {
     width: 90%;
   }
+
   .heart-box {
     height: 30px;
     float: right;
     clear: both;
     width: 5px;
   }
+
   .heart {
     top: -30px;
     width: 40px;
     height: 40px;
   }
+
   .heart:before,
   .heart:after {
-  height: 40px;
-  width: 40px;
+    height: 40px;
+    width: 40px;
   }
+
   .heart:before {
     top: -20px;
   }
@@ -231,20 +267,24 @@ footer{
     left: 20px;
   }
 }
+
 @media only screen and (max-width: 470px) {
   .bigTitle p {
     width: 100%;
   }
+
   .heart {
     top: -30px;
     width: 30px;
     height: 30px;
   }
+
   .heart:before,
   .heart:after {
-  height: 30px;
-  width: 30px;
+    height: 30px;
+    width: 30px;
   }
+
   .heart:before {
     top: -15px;
   }
