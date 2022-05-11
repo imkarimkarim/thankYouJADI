@@ -40,28 +40,28 @@ body {
   background: var(--border);
   font-size: 1em;
   color: var(--link);
-  transition: .5s ease all;
+  transition: 0.5s ease all;
 }
 
 a:link {
   color: var(--link);
-  transition: .2s ease all;
+  transition: 0.2s ease all;
 }
 
 a:hover {
   color: var(--hoverLink);
   text-decoration: none;
-  transition: .2s ease all;
+  transition: 0.2s ease all;
 }
 
 a:visited {
   color: var(--link);
-  transition: .2s ease all;
+  transition: 0.2s ease all;
 }
 
 a:visited:hover {
   color: var(--hoverLink);
-  transition: .2s ease all;
+  transition: 0.2s ease all;
 }
 
 .unerLine {
@@ -78,7 +78,7 @@ a {
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
-  transition: .2s ease all;
+  transition: 0.2s ease all;
 }
 
 .bigTitle p {
@@ -89,39 +89,39 @@ a {
   padding: 0 150px 0 50px;
   text-align: left;
   color: var(--title);
-  transition: .2s ease all;
+  transition: 0.2s ease all;
 }
 
-.section-title>h4 {
+.section-title > h4 {
   font-size: 1.8em;
   margin: 60px 60px 30px 60px;
   padding: 17px;
   color: var(--title);
   align-self: center;
   box-shadow: 0 0 20px var(--shadow);
-  transition: .2s ease all;
+  transition: 0.2s ease all;
   color: var(--hoverLink);
   cursor: default;
-  transition: .2s ease all;
+  transition: 0.2s ease all;
 }
 
 .gallery-card {
   margin: 15px 0;
   border: 2px solid var(--border);
   border-radius: var(--borderRadius);
-  transition: .2s ease all;
+  transition: 0.2s ease all;
 }
 
 .gallery-card:hover {
   border: 2px solid var(--shadow);
   box-shadow: 0 0 20px var(--shadow);
-  transition: .2s ease all;
+  transition: 0.2s ease all;
 }
 
 .gallery-card:active {
   border: 2px solid var(--shadow);
   box-shadow: 0 0 20px var(--shadow);
-  transition: .2s ease all;
+  transition: 0.2s ease all;
 }
 
 .gallery-card img {
@@ -142,7 +142,7 @@ i {
 i h6 {
   padding: 8px;
   font-family: "iransans";
-  font-size: .4em;
+  font-size: 0.4em;
 }
 
 footer {
