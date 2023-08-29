@@ -19,12 +19,12 @@ $("document").ready(function () {
 
   //links
   img[1] = new Card(
-    "Linux toturials for happy people",
+    "Linux tutorials for happy people",
     "https://www.youtube.com/playlist?list=PL-tKrPVkKKE2AniHDmp6zK9KGD1sjf0bd",
     "linux.jpg"
   );
   img[2] = new Card(
-    "Jaditv",
+    "Jadi tv",
     "https://www.youtube.com/playlist?list=PL-tKrPVkKKE3hrSEWmC_zWayV-hWKQPKR",
     "tv.jpg"
   );
@@ -34,7 +34,7 @@ $("document").ready(function () {
     "sms.jpg"
   );
   img[4] = new Card(
-    "Blockchain, Currency Code and Bitcoin toturials",
+    "Blockchain, Currency Code and Bitcoin tutorials",
     "https://www.youtube.com/playlist?list=PL-tKrPVkKKE1gLxAL-56H-XR-fTapqofC",
     "blockchain.jpg"
   );
@@ -135,7 +135,7 @@ $("document").ready(function () {
     '<div class="bigTitle"><h1>ThankYou JADI</h1><div class="heart-box" style="position: relative"><div class="heart"></div></div> <p>for all this awesome contents that you spend time to make for us... you\'re the best</p></div>'
   );
 
-  // $("#section1 .section-title").append("<h4>Video Toturials<hr></h4>");
+  // $("#section1 .section-title").append("<h4>Video Tutorials<hr></h4>");
   for (let i = 1; i < img.length; i++) {
     tmpHtml =
       '<div class="col-lg-4 col-md-6 col-12">' +
